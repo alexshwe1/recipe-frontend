@@ -1,0 +1,20 @@
+/* CardBanner.css */
+.card-banner {
+  display: flex;
+  align-items: center;
+}
+  
+/* Adjust positioning */
+.card-banner svg:last-child {
+  margin-left: -35px; /* Adjust this value as needed */
+}
+
+.category-text {
+  position: absolute;
+  top: 49%; /* Center vertically */
+  left: 53%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the text */
+  font-size: 20px; /* Adjust the font size */
+  font-weight: 650;
+  z-index: 3; /* Place the text above other elements */
+}

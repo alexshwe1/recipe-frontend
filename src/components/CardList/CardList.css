@@ -1,0 +1,6 @@
+.card-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next row */
+    justify-content: center; /* Center cards horizontally */
+    align-items: flex-start; /* Align cards to the top of the container */
+}

@@ -1,0 +1,42 @@
+.card-container {
+  width: 520px;
+  height: 360px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  background: #D9D9D9;
+  margin: 20px; /* Space between cards */
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s; /* Add transitions for smooth effect */
+  position: relative; /* Position for the banner */
+}
+
+.card-container:hover {
+  transform: scale(1.02); /* Scale up the card on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
+}
+
+.card-title {
+  color: #000;
+  font-weight: 600;
+  max-width: 95%;
+}
+
+.card-description {
+  color: #000;
+  font-weight: 500;
+  margin-top: 10px; /* Add some spacing */
+  margin-bottom: 0; /* Remove default margin */
+  max-width: 80%;
+}
+
+.banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px 30px;
+  border-radius: 5px 0 0 0;
+}
