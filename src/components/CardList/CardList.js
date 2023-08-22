@@ -27,6 +27,7 @@ const CardList = () => {
           key={card.id}
           title={card.title}
           description={card.description}
+          category={card.category}
         />
       ))}
     </div>

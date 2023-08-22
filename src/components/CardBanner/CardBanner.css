@@ -2,6 +2,16 @@
 .card-banner {
   display: flex;
   align-items: center;
+  position: absolute;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 14%;
+  transform: translate(-50%, -50%);
+  z-index: 3; /* Place the icon in the foreground */
+  font-size: 35px;
 }
   
 /* Adjust positioning */
