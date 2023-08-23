@@ -4,6 +4,8 @@ Right now, this application can only deployed locally. Below are instructions to
 
 TODO: Deploy the application to Google Cloud Storage (GCS) and configure DNS using Cloudflare.
 
+NOTE: HTTP POST is disabled to protect database integrity. Contact admin to enable HTTP POST for adding recipes. 
+
 ## Available Scripts
 
 In the project directory, you can run:
