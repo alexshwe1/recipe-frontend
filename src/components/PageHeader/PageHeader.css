@@ -36,8 +36,6 @@
 }
 
 @media (max-width: 2239px) {
-
-  /* Reuse styles from default block */
   .add-icon {
 		left: 620px; /* Adjust the right position to desired spacing */
 		bottom: 2px; /* Vertically center the icon */
@@ -45,23 +43,20 @@
 }
 
 @media (max-width: 1679px) {
-
-  /* Reuse styles from default block */
   .add-icon {
 		left: 340px; /* Adjust the right position to desired spacing */
   }
 }
 
 @media (max-width: 1119px) {
-
 	.page-header {
 		padding: 10px;
 	}
+
   .page-title {
     font-size: 40px; /* Decrease font size for smaller screens */
   }
 
-  /* Reuse styles from default block */
   .add-icon {
 		font-size: 1.5rem;
 		left: 120px; /* Adjust the right position to desired spacing */
@@ -69,8 +64,6 @@
 }
 
 @media (max-width: 560px) {
-  /* Reuse styles from default block */
-
 	.add-icon-container {
     justify-content: flex-end; /* Align the container to the right */
   }
