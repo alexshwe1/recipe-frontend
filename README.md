@@ -2,7 +2,7 @@
 
 Right now, this application can only deployed locally. Below are instructions to run the project on your local machine. 
 
-TODO: Deploy the application to Google Cloud Storage (GCS) and configure DNS using Cloudflare.
+TODO: Deploy the application with Google Cloud Run. Application is building and pushing successfully but having issues with deployment.
 
 NOTE: HTTP POST is disabled to protect database integrity. Contact admin to enable HTTP POST for adding recipes. 
 
