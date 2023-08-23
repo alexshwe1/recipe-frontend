@@ -1,0 +1,41 @@
+/* RecipeModal.css */
+.modal-title {
+  color: #000;
+  font-weight: 600;
+  max-width: 100%;
+}
+
+.modal-description {
+  color: #000;
+  font-weight: 500;
+  margin-top: 10px; /* Add some spacing */
+  margin-bottom: 10px; /* Remove default margin */
+  max-width: 100%;
+}
+
+.custom-close-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+}
+
+.hover-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px; /* Adjust the size of the circle */
+  height: 40px; /* Adjust the size of the circle */
+  background-color: rgba(0, 0, 0, 0.1); /* Dark overlay color */
+  border-radius: 50%; /* Create a circular shape */
+  opacity: 0; /* Initially transparent */
+  transition: opacity 0.3s; /* Add a smooth opacity transition */
+}
+
+.custom-close-button:hover .hover-overlay {
+  opacity: 1; /* Show the overlay on hover */
+}

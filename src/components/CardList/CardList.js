@@ -1,14 +1,36 @@
 // CardList.js
 import React, { useState, useEffect } from 'react';
 import Card from '../Card/Card';
+import RecipeModal from '../RecipeModal/RecipeModal';
 import './CardList.css'
 
 const CardList = () => {
     const [recipes, setRecipes] = useState([]);
+
+    const [selectedCard, setSelectedCard] = useState(null)
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const handleCardSelect = async (card) => {
+      await setSelectedCard(card);
+    }
+
+    const handleClose = async () => {
+      await setSelectedCard(null)
+    }
   
     useEffect(() => {
       fetchData();
     }, []);
+
+
+    useEffect(() => {
+      if (selectedCard !== null) {
+        setIsModalOpen(true);
+      } else {
+        setIsModalOpen(false);
+      }
+    }, [selectedCard]);
     
     async function fetchData() {
       try {
@@ -21,15 +43,23 @@ const CardList = () => {
     }
 
   return (
-    <div className="card-list">
-      {recipes.map(card => (
-        <Card
-          key={card.id}
-          title={card.title}
-          description={card.description}
-          category={card.category}
-        />
-      ))}
+    <div>
+      <div className="card-list">
+        {recipes.map(card => (
+          <Card
+            key={card._id}
+            card={card}
+            onClick={() => {
+              handleCardSelect(card);
+            }}
+          />
+        ))}
+      </div>
+      <RecipeModal
+        isOpen={isModalOpen}
+        onClose={handleClose}
+        card={selectedCard}
+      />
     </div>
   );
 };
