@@ -23,10 +23,12 @@ const PageHeader = () => {
       });
 
       if (response.ok) {
-        window.location.reload();
         // Handle successful response
+        window.location.reload();
+        console.log("Successfully created recipe.");
       } else {
         // Handle error response
+        console.log("Error creating recipe.");
       }
     } catch (error) {
       // Handle fetch error
