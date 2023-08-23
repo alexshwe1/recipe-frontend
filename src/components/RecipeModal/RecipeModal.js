@@ -25,7 +25,7 @@ const RecipeModal = ({ isOpen, onClose, card }) => {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <h3>Ingredients:</h3>
+        <h3 style={{ marginTop: '10px'}}>Ingredients:</h3>
           <ul>
             {card.ingredients.map((ingredient, index) => (
               <li key={index}>{ingredient}</li>

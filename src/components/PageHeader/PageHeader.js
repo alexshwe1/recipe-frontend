@@ -23,6 +23,7 @@ const PageHeader = () => {
       });
 
       if (response.ok) {
+        window.location.reload();
         // Handle successful response
       } else {
         // Handle error response

@@ -8,9 +8,13 @@
 .modal-description {
   color: #000;
   font-weight: 500;
-  margin-top: 10px; /* Add some spacing */
-  margin-bottom: 10px; /* Remove default margin */
+  margin-top: 0px; /* Add some spacing */
+  margin-bottom: 5px; /* Remove default margin */
   max-width: 100%;
+}
+
+.ingredients-title {
+  margin-top: 30px; /* Adjust the padding as needed */
 }
 
 .custom-close-button {
@@ -21,6 +25,8 @@
   position: absolute;
   top: 20px;
   right: 30px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transform-origin: center center; /* Set the transform origin to the center of the icon */
 }
 
 .hover-overlay {
@@ -36,6 +42,8 @@
   transition: opacity 0.3s; /* Add a smooth opacity transition */
 }
 
-.custom-close-button:hover .hover-overlay {
-  opacity: 1; /* Show the overlay on hover */
+.custom-close-button:hover {
+  color: #333; /* Darken the color on hover */
+  /* Add the rotation and cancel vertical translation */
+  transform: rotate(90deg) translateY(0);
 }

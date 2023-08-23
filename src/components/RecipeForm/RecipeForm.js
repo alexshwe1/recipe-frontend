@@ -1,6 +1,8 @@
 // RecipeForm.js
 import React, { useState } from 'react';
 import { Modal, Form, Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import './RecipeForm.css';
 
 const RecipeForm = ({ showModal, handleClose, handleSubmit }) => {
@@ -19,11 +21,13 @@ const RecipeForm = ({ showModal, handleClose, handleSubmit }) => {
 
   return (
     <Modal show={showModal} onHide={handleClose}>
-      <Modal.Header closeButton>
+      <Modal.Header className="custom-modal-header">
         <Modal.Title>
-          <h1 className='form-modal-title'>
-            Create A Recipe
-          </h1>
+          <h1 className='modal-title'>Create New Recipe</h1>
+          <div className="custom-close-button-form" onClick={handleClose}>
+            <FontAwesomeIcon icon={faTimes} />
+            <span className="hover-overlay-form"></span> {/* Overlay for hover effect */}
+          </div>
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
