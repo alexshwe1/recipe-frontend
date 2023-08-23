@@ -1,0 +1,84 @@
+/* PageHeader.css */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the content horizontally */
+  padding: 30px;
+  position: relative; /* Add relative positioning to the container */
+  background-color: #D9D9D9;
+  width: 100vw; /* Set the width to the viewport width */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.page-title {
+  text-align: center;
+  color: #000;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.add-icon {
+  font-size: 2.0rem;
+  color: #000;
+  cursor: pointer;
+  position: relative;
+  left: 900px; /* Adjust the right position to desired spacing */
+  top: 38%; /* Vertically center the icon */
+  /* Add rotation and transition */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transform-origin: center center; /* Set the transform origin to the center of the icon */
+}
+
+.add-icon:hover {
+  color: #333; /* Darken the color on hover */
+  /* Add the rotation and cancel vertical translation */
+  transform: rotate(90deg) translateY(0);
+}
+
+@media (max-width: 2239px) {
+
+  /* Reuse styles from default block */
+  .add-icon {
+		left: 620px; /* Adjust the right position to desired spacing */
+		bottom: 2px; /* Vertically center the icon */
+  }
+}
+
+@media (max-width: 1679px) {
+
+  /* Reuse styles from default block */
+  .add-icon {
+		left: 340px; /* Adjust the right position to desired spacing */
+  }
+}
+
+@media (max-width: 1119px) {
+
+	.page-header {
+		padding: 10px;
+	}
+  .page-title {
+    font-size: 40px; /* Decrease font size for smaller screens */
+  }
+
+  /* Reuse styles from default block */
+  .add-icon {
+		font-size: 1.5rem;
+		left: 120px; /* Adjust the right position to desired spacing */
+  }
+}
+
+@media (max-width: 560px) {
+  /* Reuse styles from default block */
+
+	.add-icon-container {
+    justify-content: flex-end; /* Align the container to the right */
+  }
+
+  .add-icon {
+		position: fixed;
+		right: 20px;
+		left: auto;
+		top: 25px;
+  }
+}

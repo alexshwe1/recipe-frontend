@@ -25,7 +25,14 @@ const RecipeModal = ({ isOpen, onClose, card }) => {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <p>More info goes here</p>
+        <h3>Ingredients:</h3>
+          <ul>
+            {card.ingredients.map((ingredient, index) => (
+              <li key={index}>{ingredient}</li>
+            ))}
+          </ul>
+        <h3>Directions:</h3>
+        <p>{card.instructions}</p>
       </Modal.Body>
     </Modal>
   );
