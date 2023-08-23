@@ -26,6 +26,5 @@ Your app is ready to be deployed!
 If you don't want to clone this repo and run the project locally, here's a preview of what the main page looks like!
 
 
-https://github.com/alexshwe1/recipe-frontend/assets/71849221/3347bb63-108c-4c41-b7ff-4a98d83f414f
-
+https://github.com/alexshwe1/recipe-frontend/assets/71849221/07135f0a-16cc-4ab7-84d6-a35f9b293a85
 
